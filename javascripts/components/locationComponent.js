@@ -1,7 +1,11 @@
 
-
-
-
+const applyTime = () => {
+    $(".morning").each((i,locations)=>{
+        const fullPrice = $(locations).find('.price')
+        const newPrice = (parseInt(fullPrice.html()) * (1-discount)).toFixed(2);
+        fullPrice.html(newPrice);
+    })
+}
 
 
 
@@ -24,6 +28,8 @@ arrayOfLocations.forEach((locations) => {
 $("#locationId").append(newString);
 }
 
+// $(".search").text
+// $('div:contains("Hot")');
 
 
 

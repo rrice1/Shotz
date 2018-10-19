@@ -9,20 +9,20 @@
         {
             "Location": "image url",
             "Name": "Hot Heights",
-            "Location Address":"123 address",
-            "Shoot Time":"Afternoon"
+            "LocationAddress":"123 address",
+            "ShootTime":"Afternoon"
         },
         {
             "Location": "image url",
             "Name": "Low Shallows",
-            "Location Address":"123 address",
-            "Shoot Time":"Evening"
+            "LocationAddress":"123 address",
+            "ShootTime":"Evening"
         },
         {
             "Location": "image url",
             "Name": "The Beach",
-            "Location Address":"123 address",
-            "Shoot Time":"After Dark"
+            "LocationAddress":"123 address",
+            "ShootTime":"After Dark"
            }
     ]
 }
