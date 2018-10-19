@@ -1,0 +1,2 @@
+# Shotz
+nss homework
