@@ -1,0 +1,10 @@
+{
+    "movie": [
+        {
+            "name": "badMovie",
+            "genre": "horror",
+            "estimatedReleaseDate": "8-12-2018",
+            "description":"Best movie ever"
+                }
+            ]
+}

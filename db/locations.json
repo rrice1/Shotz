@@ -1,0 +1,28 @@
+{
+    "locations": [
+        {
+            "Location": "image url",
+            "Name": "funName",
+            "LocationAddress":"123 address",
+            "ShootTime":"Morning"
+        },
+        {
+            "Location": "image url",
+            "Name": "Hot Heights",
+            "Location Address":"123 address",
+            "Shoot Time":"Afternoon"
+        },
+        {
+            "Location": "image url",
+            "Name": "Low Shallows",
+            "Location Address":"123 address",
+            "Shoot Time":"Evening"
+        },
+        {
+            "Location": "image url",
+            "Name": "The Beach",
+            "Location Address":"123 address",
+            "Shoot Time":"After Dark"
+           }
+    ]
+}
