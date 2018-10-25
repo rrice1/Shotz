@@ -4,25 +4,41 @@
             "Location": "image url",
             "Name": "funName",
             "LocationAddress":"123 address",
-            "ShootTime":"Morning"
+            "ShootTime":"Morning",
+            "Morning":true,
+            "Afternoon":false,
+            "Evening":false,
+            "AfterDark":false
         },
         {
             "Location": "image url",
             "Name": "Hot Heights",
             "LocationAddress":"123 address",
-            "ShootTime":"Afternoon"
+            "ShootTime":"Afternoon",
+            "Morning":false,
+            "Afternoon":true,
+            "Evening":false,
+            "AfterDark":false
         },
         {
             "Location": "image url",
             "Name": "Low Shallows",
             "LocationAddress":"123 address",
-            "ShootTime":"Evening"
+            "ShootTime":"Evening",
+            "Morning":false,
+            "Afternoon":false,
+            "Evening":true,
+            "AfterDark":false
         },
         {
             "Location": "image url",
             "Name": "The Beach",
             "LocationAddress":"123 address",
-            "ShootTime":"After Dark"
+            "ShootTime":"After Dark",
+            "Morning":false,
+            "Afternoon":false,
+            "Evening":false,
+            "AfterDark":true
            }
     ]
 }
