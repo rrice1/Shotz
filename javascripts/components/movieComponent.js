@@ -6,7 +6,7 @@
 const writeMovie = (arrayOfMovie) => {
     let newString = '';
 arrayOfMovie.forEach((movie) => {
-    newString += `<div class="movieClass card col-md-6 col-md-offset-3">
+    newString += `<div class="movieClass card col-md-3 col-md-offset-3">
         <div class="caption">
             <h3 id="thumbnail-label">${movie.name}</h3>
             <p>

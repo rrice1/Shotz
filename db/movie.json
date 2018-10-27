@@ -1,10 +1,36 @@
 {
     "movie": [
         {
-            "name": "badMovie",
-            "genre": "horror",
+            "id":"movie1",
+            "name": "Halloween",
+            "genre": "Genre of Horror",
             "estimatedReleaseDate": "8-12-2018",
-            "description":"Best movie ever"
-                }
+            "description":"Scariest movie ever!",
+            "locations":["location1","location2","location3"]
+                },
+                {
+                    "id":"movie2",
+                    "name": "Jason",
+                    "genre": "Genre of Horror",
+                    "estimatedReleaseDate": "8-12-2018",
+                    "description":"Scariest movie ever! There's a hockey mask!",
+                    "locations":["location1","location3","location4"]
+                        },
+                        {
+                            "id":"movie3",
+                            "name": "Kruger",
+                            "genre": "Genre of Horror",
+                            "estimatedReleaseDate": "8-12-2018",
+                            "description":"Scariest movie ever! Don't fall asleep!",
+                            "locations":["location1","location2","location4"]
+                                },
+                                {
+                                    "id":"movie4",
+                                    "name": "It",
+                                    "genre": "Genre of Horror",
+                                    "estimatedReleaseDate": "8-12-2018",
+                                    "description":"Scariest movie ever! Don't like clowns!",
+                                    "locations":["location2","location3","location4"]
+                                        }
             ]
 }

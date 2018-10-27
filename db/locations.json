@@ -1,9 +1,10 @@
 {
     "locations": [
         {
-            "Location": "image url",
-            "Name": "funName",
-            "LocationAddress":"123 address",
+            "id":"location1",
+            "Location": "http://www.danielleatyourside.ca/wp-content/uploads/2016/04/PinDrop-Location.jpg",
+            "Name": "Fun Spot",
+            "LocationAddress":"001 Old Hickory Blvd",
             "ShootTime":"Morning",
             "Morning":true,
             "Afternoon":false,
@@ -11,9 +12,10 @@
             "AfterDark":false
         },
         {
-            "Location": "image url",
+            "id":"location2",
+            "Location": "https://gaia.adage.com/images/bin/image/jumbo/0306_Location_iStock612491256_3x2.jpg",
             "Name": "Hot Heights",
-            "LocationAddress":"123 address",
+            "LocationAddress":"1234 Favorite Place",
             "ShootTime":"Afternoon",
             "Morning":false,
             "Afternoon":true,
@@ -21,9 +23,10 @@
             "AfterDark":false
         },
         {
-            "Location": "image url",
+            "id":"location3",
+            "Location": "https://accelerator-origin.kkomando.com/wp-content/uploads/2015/03/shutterstock_253372615-970x546.jpg",
             "Name": "Low Shallows",
-            "LocationAddress":"123 address",
+            "LocationAddress":"876 Street",
             "ShootTime":"Evening",
             "Morning":false,
             "Afternoon":false,
@@ -31,9 +34,10 @@
             "AfterDark":false
         },
         {
-            "Location": "image url",
+            "id":"location4",
+            "Location": "https://www.payetteforward.com/wp-content/uploads/2016/09/My-iPhone-Location-Is-Wrong-Heres-The-Fix-828x466.jpg",
             "Name": "The Beach",
-            "LocationAddress":"123 address",
+            "LocationAddress":"3364 Drive Court",
             "ShootTime":"After Dark",
             "Morning":false,
             "Afternoon":false,

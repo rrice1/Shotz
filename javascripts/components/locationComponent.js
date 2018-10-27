@@ -23,14 +23,14 @@ const applyTime = () => {
 const writeLocations = (arrayOfLocations) => {
     let newString = '';
 arrayOfLocations.forEach((locations) => {
-    newString += `<div class="bigger card col-md-6 col-md-offset-3"
+    newString += `<div class="bigger card col-md-3 col-md-offset-3"
     <div class="${locations.Morning ? 'morning' : ''}${locations.Afternoon ? 'afternoon' : ''}${locations.Evening ? 'evening' : ''}${locations.AfterDark ? 'afterDark' : ''} movieClass card col-md-6 col-md-offset-3">
         <div id="big" class="caption">
-            <h3 id="thumbnail-label">${locations.Location}</h3>
+            <img class="pic" src="${locations.Location}">
             <p>
                 <span id="locationName" class="genre">${locations.Name}</span>
             </p>
-            <p>Estimated Release Date: ${locations.LocationAddress}</p>
+            <p>${locations.LocationAddress}</p>
             <p>${locations.ShootTime}</p>
         </div>
     </div>
@@ -96,16 +96,46 @@ $(document).ready(function(){
 // $(".search").text
 // $('div:contains("Hot")');
 
+const loadBoards = () => {
+return new Promise((resolve,reject)  => {
 $.get('../db/locations.json')
 .done((data)=> {
     console.log(data);
-    writeLocations(data.locations);
-    //bindEvents();
+    writeLocations(data.locations)
+   resolve(data.locations);
+
 })
 .fail((error) =>{
-    console.error({error});
+    reject(error);
 });
+})
+}
+loadBoards();
 
+// const loadBoards = () => {
+//     return new Promise((resolve,reject)  => {
+//         $.get('../db/boards.json')
+//         .done((data) =>{
+//             console.log(data);
+//             resolve(data.boards)
+//         })
+//         .fail((error) => {
+//             reject(error);
+//         })
+//     });
+// }
+
+
+
+// $.get('../db/locations.json')
+// .done((data)=> {
+//     console.log(data);
+//     writeLocations(data.locations);
+//     //bindEvents();
+// })
+// .fail((error) =>{
+//     console.error({error});
+// });
 
 
 
