@@ -23,8 +23,8 @@ const applyTime = () => {
 const writeLocations = (arrayOfLocations) => {
     let newString = '';
 arrayOfLocations.forEach((locations) => {
-    newString += `<div class="bigger card col-md-3 col-md-offset-3"
-    <div class="${locations.Morning ? 'morning' : ''}${locations.Afternoon ? 'afternoon' : ''}${locations.Evening ? 'evening' : ''}${locations.AfterDark ? 'afterDark' : ''} movieClass card col-md-6 col-md-offset-3">
+    newString += `<div class="bigger card col-md-3 col-md-offset-3 ${locations.Morning ? 'morning' : ''}${locations.Afternoon ? 'afternoon' : ''}${locations.Evening ? 'evening' : ''}${locations.AfterDark ? 'afterDark' : ''} locationClass"
+    <div class=" ${locations.Morning ? 'morning' : ''}${locations.Afternoon ? 'afternoon' : ''}${locations.Evening ? 'evening' : ''}${locations.AfterDark ? 'afterDark' : ''} locationClass card col-md-6 col-md-offset-3">
         <div id="big" class="caption">
             <img class="pic" src="${locations.Location}">
             <p>
@@ -34,7 +34,6 @@ arrayOfLocations.forEach((locations) => {
             <p>${locations.ShootTime}</p>
         </div>
     </div>
-</div>
 </div>`
 });
 // Write to the available div
@@ -45,18 +44,24 @@ $("#locationId").append(newString);
 
 // })
 
+
+
+$("#all").click(()=>{
+    location.reload();
+})
+
 $("#morning").click(()=>{
-    $(".movieClass").not(".morning").toggle();
+    $(".locationClass").not(".morning").toggle();
 })
 
 $("#afternoon").click(()=>{
-    $(".movieClass").not(".afternoon").toggle();
+    $(".locationClass").not(".afternoon").toggle();
 })
 $("#evening").click(()=>{
-    $(".movieClass").not(".evening").toggle();
+    $(".locationClass").not(".evening").toggle();
         })
 $("#afterDark").click(()=>{
-    $(".movieClass").not(".afterDark").toggle();
+    $(".locationClass").not(".afterDark").toggle();
             })
 // const sortShootTimes = (e) => {
 //     const type = e.target.id;
@@ -77,6 +82,20 @@ $("#afterDark").click(()=>{
 //     }
 
 // };
+
+// $("#morning").click(()=>{
+//    if($(".locationClass").includes("morning"))  $(".movieClass").not(".morning").toggle();
+// })
+
+// $("#afternoon").click(()=>{
+//     $(".movieClass").not(".afternoon").toggle();
+// })
+// $("#evening").click(()=>{
+//     $(".movieClass").not(".evening").toggle();
+//         })
+// $("#afterDark").click(()=>{
+//     $(".movieClass").not(".afterDark").toggle();
+//             })
 
 $(document).ready(function(){
     $("#typeHereId").on("keyup", function() {
